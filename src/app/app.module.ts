@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 // modules
 import { SectionsModule } from './sections/sections.module';
+// services
+import { ServicesModule } from './services/services.module';
 // routes
 import { APP_ROUTES } from './app.routes';
 // componets
@@ -11,6 +13,8 @@ import { SignUpComponent } from './login/sign-up/sign-up.component';
 import { ConfirmSignUpComponent } from './login/confirm-sign-up/confirm-sign-up.component';
 import { RecoverPasswordComponent } from './login/recover-password/recover-password.component';
 import { LockscreenComponent } from './login/lockscreen/lockscreen.component';
+
+
 
 @NgModule({
   declarations: [
@@ -24,7 +28,8 @@ import { LockscreenComponent } from './login/lockscreen/lockscreen.component';
   imports: [
     BrowserModule,
     APP_ROUTES,
-    SectionsModule
+    SectionsModule,
+    ServicesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
